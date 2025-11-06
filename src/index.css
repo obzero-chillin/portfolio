@@ -15,3 +15,15 @@
 }
   */
 
+:root{
+  background-color: black;
+  color:white;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
