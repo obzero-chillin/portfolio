@@ -4,11 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Home from './Home'
+import References from './References'
 
 function App() {
   return(
     <>
+     
       <Home></Home>
+      
     </>
   );
 }
