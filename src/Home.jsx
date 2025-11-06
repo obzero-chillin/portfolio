@@ -2,6 +2,7 @@ import React from 'react'
 import './Pages.css'
 import Navbar from './Navbar';
 
+
 import { FaHtml5,FaCss3,FaAngular,FaPhp,FaLaravel,FaNode } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { MdOutlineJavascript } from "react-icons/md";
@@ -13,9 +14,9 @@ import DescrCard from './DescrCard'
 
 const Home = () => {
   return (
-    <>
+    <main className=''>
         <Navbar></Navbar>
-        <div id="home" className='w-[99%] h-full bg-[hsl(167.69,95.12%,8.04%)] mt-7 ps-10 pt-35 pb-10 rounded-3xl flex items-center'>
+        <div id="home" className='snap w-[99%] h-full bg-[hsl(167.69,95.12%,8.04%)] mt-7 ps-10 pt-35 pb-10 rounded-3xl flex items-center'>
             
             <h1 className='text-5xl pb-20'>
                 <span className='font-bold'>The Best Place </span>to get an <span className='font-bold'> <br></br>Effecient, articulate and empathetic </span><br></br>fullstack developer
@@ -23,7 +24,7 @@ const Home = () => {
             <div className=' w-[30%] aspect-square bg-transparent -ml-7 rounded-tr-md rounded-tl-4xl rounded-bl-md rounded-br-4xl border-2'></div>
         </div>
 
-        <div className='w-[90%] h-auto bg-transparent ps-14 pt-5 flex flex-wrap justify-center items-center'>
+        <div className=' w-[90%] h-auto bg-transparent ps-14 pt-5 flex flex-wrap justify-center items-center'>
             <DescrCard 
                 topic="Maximum LCP"
                 description="Largest Contentful Paint (LCP) is a key performance metric that measures how long it takes for the largest image or text block on a web page to become visible in the user's viewport. I'm there to make sure your page gets maximum LCP."                    
@@ -63,7 +64,7 @@ const Home = () => {
         </div>
     
     
-    </>
+    </main>
   )
 }
 
