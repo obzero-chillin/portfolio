@@ -4,10 +4,10 @@ import Logo from './assets/Logo.svg'
 
 const Navbar = () => {
   return (
-    <header className='fixed top-7 w-full flex justify-center'>
+    <header className=' fixed top-7 w-full flex justify-center z-100'>
       
       
-      <div className='flex w-[50%] backdrop-blur-2xl border-2 pt-4 pb-4 justify-between items-center px-5 rounded-3xl overflow-hidden'> 
+      <div id="navigator" className='hidden w-[60%] backdrop-blur-2xl  pt-4 pb-4 justify-between items-center px-5 rounded-3xl overflow-hidden'> 
         
       
         <img src={Logo} alt="Company Logo" className='w-12' /> 

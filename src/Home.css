@@ -1,1 +1,53 @@
-@import 'tailwindcss';
+.carausel::-webkit-scrollbar{
+    display: none;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .groupee{
+    animation: scroll-loop 20s infinite linear;
+    
+    };
+    
+
+}
+
+
+@keyframes scroll-loop {
+    from {
+        transform: translateX(0); 
+    }
+   
+    to{
+        transform: translateX(-50%); 
+    }
+}
+
+@media screen and (width>=70rem) {
+    #home{
+        display:flex;
+        align-items: center; 
+        justify-content: center;
+        flex-direction: row-reverse;
+        overflow-x: hidden;
+    }
+
+    #profile-pic{
+        min-width:400px ;
+        height:40vw ;
+        max-height:650px;
+        position:static;
+        margin: -30px;
+        
+    }
+    #heading{
+        font-size: 54px;
+        line-height: 64px;
+        position:static
+
+    }
+    #navigator{
+        display: flex;
+    }
+
+    
+}

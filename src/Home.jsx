@@ -1,13 +1,16 @@
 import React from 'react'
 import './Pages.css'
 import Navbar from './Navbar';
-
+import FadeIn from './FadeIn';
+import { useState } from 'react';
+import './Home.css'
 
 import { FaHtml5,FaCss3,FaAngular,FaPhp,FaLaravel,FaNode } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { MdOutlineJavascript } from "react-icons/md";
 import { DiMysql } from "react-icons/di";
 import { SiMongodb } from "react-icons/si";
+import prof from './assets/polish.png'
 
 
 import DescrCard from './DescrCard'
@@ -16,13 +19,28 @@ const Home = () => {
   return (
     <main className=''>
         <Navbar></Navbar>
-        <div id="home" className='snap w-[99%] h-full bg-[hsl(167.69,95.12%,8.04%)] mt-7 ps-10 pt-35 pb-10 rounded-3xl flex items-center'>
-            
-            <h1 className='text-5xl pb-20'>
+        
+        <div 
+  id="home" 
+  className='max-w-full h-full bg-[hsl(167.69,95.12%,8.04%)] mt-7 pt-35 pb-10 rounded-3xl block text-center mx-auto'
+>
+             <div>
+                <img 
+                  id="profile-pic" 
+                  src={prof} 
+                  className='w-[40%] z-0 mx-auto object-cover border rounded-tl-4xl rounded-tr-2xl rounded-br-4xl rounded-bl-2xl '
+                ></img>            </div>
+            <div className='z-50'>
+                <h1 id="heading" className='text-[34px]/[44px] pb-20 z-50 text-center'>
                 <span className='font-bold'>The Best Place </span>to get an <span className='font-bold'> <br></br>Effecient, articulate and empathetic </span><br></br>fullstack developer
             </h1>
-            <div className=' w-[30%] aspect-square bg-transparent -ml-7 rounded-tr-md rounded-tl-4xl rounded-bl-md rounded-br-4xl border-2'></div>
+            </div>
+            
+           
+            
         </div>
+
+        
 
         <div className=' w-[90%] h-auto bg-transparent ps-14 pt-5 flex flex-wrap justify-center items-center'>
             <DescrCard 
@@ -41,26 +59,41 @@ const Home = () => {
             ></DescrCard>         
         </div>
 
-        <div className='w-[99%] h-auto mt-7 flex flex-col items-center justify-center'>
-            <fieldset>
-                <legend id="skills" className='text-center' >Skills</legend>
-                <div className='min-w-[280px] max-w-[400px] flex border-2 pt-3 pl-1 pr-1 justify-start gap-4 flex-nowrap overflow-x-auto'>
-                    <FaHtml5 size={24} className="mx-1" />
-                    <FaCss3 size={24} className="mx-1" />
-                    <RiTailwindCssFill size={24} className="mx-1" />
-                    <MdOutlineJavascript size={24} className="mx-1" />
-                    <FaNode size={24} className="mx-1" />
-                    <FaAngular size={24} className="mx-1" />
-                    <FaPhp size={24} className="mx-1" />
-                    <FaLaravel size={24} className="mx-1" />
-                    <DiMysql size={24} className="mx-1" />
-                    <SiMongodb size={24} className="mx-1" />
+        <div className='w-full h-auto mt-7 flex flex-col items-center justify-center'>
+            <h2 className='text-3xl font-mono mb-4'>Skills</h2>
+            <div id="skills" className='carausel max-w-[500px] motion-reduce:w-[90%] motion-reduce:max-w-[1366px] flex h-auto border-amber-200 overflow-x-hidden'>                
+               
+                
+                <div className='groupee flex items-center justify-start border-2 gap-[1.5em]'>
+                    
+
+                    
+                    <FaHtml5 size={44} className="mx-1 shrink-0" />
+                    <FaCss3 size={44} className="mx-1 shrink-0" />
+                    <RiTailwindCssFill size={44} className="mx-1 shrink-0" />
+                    <MdOutlineJavascript size={44} className="mx-1 shrink-0" />
+                    <FaNode size={44} className="mx-1 shrink-0" />
+                    <FaAngular size={44} className="mx-1 shrink-0" />
+                    <FaPhp size={44} className="mx-1 shrink-0" />
+                    <FaLaravel size={44} className="mx-1 shrink-0" />
+                    <DiMysql size={44} className="mx-1 shrink-0" />
+                    <SiMongodb size={44} className="mx-1 shrink-0" />
+
+                    
+                    <FaHtml5 size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <FaCss3 size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <RiTailwindCssFill size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <MdOutlineJavascript size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <FaNode size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <FaAngular size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <FaPhp size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <FaLaravel size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <DiMysql size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
+                    <SiMongodb size={44} className="motion-reduce:hidden mx-1 shrink-0 extra" />
                 </div>
-            </fieldset>
+            </div>
 
             {/**ADD CARDS FOR PAYMENT INFO */}
-
-
         </div>
     
     
